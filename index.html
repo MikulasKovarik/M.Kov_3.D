@@ -9,29 +9,71 @@
 
 </head>
 <body id="showcase">
+    <!--Navigation bar-->
     <div>
     <ul id="navbar">
-        <li class="text-primary">Pasokon inc.</li><li class="text-primary" style="color: green;">Official website </li>
+        <li class="text-primary">Pasokon inc.</li><li class="text-primary" style="color: green;">パソコンINC. </li>
+        <div class="">
         <li>
             <a href="indexxx.html"><i class="fa fa-home" style="color:purple; font-size: 36px; padding-bottom: 0% ;"></i></a>
         </li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact us</a></li>
-        <li><a href="about.asp">About us</a></li>
-        <li><a href="faq.asp">FAQ</a></li>
+        <!--Hamburger menu-->
+        <div class="hamburgermenu" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact us</a>
+        <a href="#about">About us</a>
+        <a href="#FAQ">FAQ</a>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size: 40px; padding: 1rem 2rem;"></i></li>
+          </a>
+          <div>
+            <!--javascript z W3Schools pro hamburger menu-->
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+            </div>
     </ul>
     </div>
+    <!--Introductory text-->
+    <section>
     <br>
-    <p class="center">Welcome to Pasokon Inc., where innovation meets excellence.
-        At Pasokon, we are not just a company; we are a dedicated team of visionaries, creators, and problem solvers committed to shaping the digital future.
+    <p class="center paragraph">Welcome to Pasokon Inc., where innovation meets excellence.
+    At Pasokon, we are not just a company; we are a dedicated team of visionaries, creators, and problem solvers committed to shaping the digital future.
     <br> 
     With a passion for technology and a focus on user-centric solutions, we specialize in crafting cutting-edge software applications that transform ideas into reality. Our mission is to simplify complexities, enhance experiences, and empower businesses through the seamless integration of technology into their operations. 
     <br> <br>
     Whether you are a startup aiming to disrupt the market or an established enterprise seeking digital transformation, Pasokon Inc. is your trusted partner. 
-        Explore our world of innovative solutions and let’s embark on a journey to redefine what's possible in the digital landscape.
-        Your vision, our expertise – together, we build the extraordinary.</p> <br>
-    <p></p>
-    <p></p>
-    <img src="" alt="">
+    Explore our world of innovative solutions and let’s embark on a journey to redefine what's possible in the digital landscape.
+    Your vision, our expertise – together, we build the extraordinary.</p> <br>
+    </section>
+    <section>
+        <span class="other">
+            <p style="color: black">We provide:</p>
+            <br>
+            <div id="icons">
+                <i class="fa fa-desktop" style="font-size: 38px;"></i>
+            </div>
+            <div id="icons">
+                <i class="fa fa-keyboard-o" style="font-size: 38px;"></i>
+            </div>
+            <div id="icons">
+                <i class="fa fa-window-restore" style="font-size: 38px;"></i>
+            </div>
+            <p>software hardware vaporware</p> <br>
+            //tohle mi nešlo vycentrovat
+        </span>
+    </section>
+    <footer style="padding: 2rem; font-family: 'Courier New', Courier, monospace;">
+        footer text blahblahblahblahblahblahblahblahblahblah <br>
+        all rights reserved
+    </footer>
 </body>
 </html>
