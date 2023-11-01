@@ -108,7 +108,7 @@ a {
 }
 
 .other{
-    margin-top: 80vh;
+    margin-top: 10vh;
     padding:2rem;
     padding-left: 44rem;
     display: inline-table;
@@ -176,3 +176,5 @@ a {
     text-align: center;
     padding: 1rem;
   }
+
+  
