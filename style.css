@@ -1,180 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Unica+One&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
-#logo {
-    font-size:2rem
+body {
+    background-image: url(https://wallpapers.com/images/hd/vaporwave-background-sc46wjgt93poi8dk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+:root {
+    --color1: violet;
+    --color2: red;
+    --color3: #2f00ff;
+    --textcolor: rgb(87, 218, 0);
+  }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-#navbar{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 16px;
-    background-color: black;
-    overflow: hidden;
-}
-
-#navbar a{
-    display: none;
-}
-
-#navbar a.icon{
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-ul {
-    display: flex;
+.navbar ul{
     list-style-type: none;
-    margin: 0;
     padding: 0;
-}
-
-#navbar ul li a{
-    padding: 12px;
-    margin: 0 4px;
-}
-
-#navbar li a {
-    display: block;
-    width: 6rem;
-    font-family: chakra petch;
-    font-size: 18px;
-    border-right: 2px solid;
-    text-align: center;
-}
-
---primary-color {
-    color:purple;
-}
-
---secondary-color {
-    color:yellow;
-}
-
-li {
-    float: left
-}
-.text-primary{
-    color: purple;
-    font-family: unica one;
-    font-size: 30px;
-    border-right: 4px gray dotted;
-    padding: 0px 12px;
-    margin: 0px 12px;
-}
-
-.paragraph{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    text-align: center;
-    color: yellow;
-    font-weight:bolder;
-    padding: 24px 108px;
-}
-
-.center{
-    line-height: 40px;
-    height: 50px;
-    display: flex;
-    flex: wrap;
-}
-
-#navbar li a:hover {
-    background-color: lime;
-    color: black;
-}
-
-a {
-    display: block;
-    padding: 1px;
-    color: white;
-}
-
-#showcase {
-    background: url(./images/1188016.jpg) no-repeat center center/cover;
-    height: 70vh;
-}
-
-.other{
-    margin-top: 10vh;
-    padding:2rem;
-    padding-left: 44rem;
-    display: inline-table;
-    text-align: center;
-    color: black;
-    font-family:'Courier New', Courier, monospace;
-}
-#icons{
-    background-color: hotpink;
-    border: 1.5rem solid;
-    border-color: hotpink;
-    border-radius: 100%;
-    display:inline-table;
-    margin:2rem;
-    width:12px;
-    height:12px;
-}
-
-.hamburgermenu{
-    overflow: hidden;
-    position:relative;
-    background-color: #333;
-}
-
-.hamburgermenu #mylinks{
-    display:none;
-}
-
-.hamburgermenu a {
-    padding: 14px 16px;
-    color:purple;
-    text-decoration: none;
-    font-size: 24px;
-    background-color: white;
-    display:block;
-
-}
-
-.hamburgermenu a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
+    margin: 0;
+    position: sticky;
     top: 0;
-    color:yellow;
-    background-color: hotpink;
-  }
-
-.hamburgermenu:hover{
-    color:black;
-    background-color: green;
+    width: 100%;
+    background-color: rgb(108, 0, 180);
+    display:flex;
+    flex-wrap: wrap;
 }
 
-.mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  footer {
-    background-color: aqua;
-    font-family:'Courier New', Courier, monospace;
+.navbar li a {
+    display: block;
+    color: var(--color1);
     text-align: center;
-    padding: 1rem;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    border-left: solid;
+    border-color: var(--color2);
+    border-width: 4px;
   }
 
-  
+ .navbar li a:hover {
+    background-color: var(--color3);
+    color: white;}
+
+ .navbar li{
+    float: left;
+ }
+
+#active {
+    color: green;
+}
+
+
+p{
+    color: var(--textcolor);
+    padding-top: 2rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+
+}
+
+footer{
+    color: red;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    padding-left: 2rem;
+    font-size: 1rem;
+
+}
+
+img{
+    max-width: 100%;
+    padding-top: 8rem;
+}
+
+form{
+    color:var(--textcolor);
+    padding-top: 2rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+table th{
+    color:var(--textcolor);
+    font-family: "Audiowide", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+th, tr, td{
+    border: outset;
+    border-color: var(--color1);
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 2rem;
+    font-family: "Audiowide", sans-serif;
+    color: var(--color2);
+}

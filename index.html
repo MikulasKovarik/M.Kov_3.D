@@ -1,53 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-
-
+    <title>パソコンINC. Homepage</title>
 </head>
-<body id="showcase">
-    <!--Navigation bar-->
-    <div>
-    <ul id="navbar">
-        <li class="text-primary">Pasokon inc.</li><li class="text-primary" style="color: green;">パソコンINC. </li>
-        <div class="">
-        <li>
-            <a href="indexxx.html"><i class="fa fa-home" style="color:purple; font-size: 36px; padding-bottom: 0% ;"></i></a>
-        </li>
-        <!--Hamburger menu-->
-        <div class="hamburgermenu" id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact us</a>
-        <a href="#about">About us</a>
-        <a href="#FAQ">FAQ</a>
-        </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" style="font-size: 40px; padding: 1rem 2rem;"></i></li>
-          </a>
-          <div>
-            <!--javascript z W3Schools pro hamburger menu-->
-            <script>
-            function myFunction() {
-              var x = document.getElementById("myLinks");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script>
-            </div>
-    </ul>
 
+
+<body>
+    <!--Navigation bar-->>
+    <div class="navbar">
+        <ul>
+        <li style="font-size: 2rem; color:hotpink; font-weight: bold; padding: 10px">パソコンINC.</li>
+        <li><a id="active" href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#news"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
+        <li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+        <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+    </ul>
     </div>
-    <!--Introductory text-->
-    <section>
-    <br>
-    <p class="center paragraph">Welcome to Pasokon Inc., where innovation meets excellence.
+    <!--Paragraph and other shit-->
+    <div>
+      <p>Welcome to Pasokon Inc., where innovation meets excellence.
     At Pasokon, we are not just a company; we are a dedicated team of visionaries, creators, and problem solvers committed to shaping the digital future.
     <br> 
     With a passion for technology and a focus on user-centric solutions, we specialize in crafting cutting-edge software applications that transform ideas into reality. Our mission is to simplify complexities, enhance experiences, and empower businesses through the seamless integration of technology into their operations. 
@@ -55,46 +31,13 @@
     Whether you are a startup aiming to disrupt the market or an established enterprise seeking digital transformation, Pasokon Inc. is your trusted partner. 
     Explore our world of innovative solutions and let’s embark on a journey to redefine what's possible in the digital landscape.
     Your vision, our expertise – together, we build the extraordinary.</p> <br>
-    </section>
-        <!--Bootstrap form-->
-        <form class="text-primary" style="width: 20rem; margin-top: 20rem; margin-left: 50rem; border:0px">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div style="color:blue" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form> 
+    </div>
+    <!--Shitty corporate office images-->
+    <img src="https://t3.ftcdn.net/jpg/03/90/12/44/360_F_390124427_TaPYOSy5zMg9MewqPQXtE3DPWp8jRDSk.jpg" alt="">
+    <img src="https://st.depositphotos.com/28379836/61660/i/450/depositphotos_616601862-stock-photo-fashion-modern-office-interiors.jpg" alt="">
+    <img src="https://media.istockphoto.com/id/119679654/photo/women-working-and-attending-calls-in-office.jpg?s=612x612&w=0&k=20&c=v0czQWh3gDoGi3GVdBJrV116QT4AmHo22PorpKW3YWY=" alt="">
+    <!--Footer (completely useless)-->
+    <footer>footer notes blahblahblahblah <br> site by Mikuláš Kovařík <br> All rights reserved.</footer>
 
-    <section>
-        <span class="other">
-            <p style="color: black">We provide:</p>
-            <br>
-            <div id="icons">
-                <i class="fa fa-desktop" style="font-size: 38px;"></i>
-            </div>
-            <div id="icons">
-                <i class="fa fa-keyboard-o" style="font-size: 38px;"></i>
-            </div>
-            <div id="icons">
-                <i class="fa fa-window-restore" style="font-size: 38px;"></i>
-            </div>
-            <p>software &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hardware &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vaporware</p>
-        </span>
-    </section>
-    <footer>
-        footer text blahblahblahblahblahblahblahblahblahblah <br>
-        All rights reserved <br>
-        Website by Mikuláš Kovařík <br>
-        Contact: ExampleAddress@gmail.com
-    </footer>
 </body>
 </html>
